@@ -787,7 +787,7 @@ namespace vddr
             char tmp[64];  sprintf(tmp,"Landmark %d",static_cast<int>(i));
             QGraphicsTextItem *ti   = scene.addText(QString(tmp),QFont("Times", 20, QFont::Bold));
             //ti->scale(1,-1);
-            ti->scale(1,1);
+            //ti->scale(1,1);
             ti->setPos(vStruct.landmarks[i].getLandmark().x(),
                        vStruct.landmarks[i].getLandmark().y()+rVisMin/2+5);
             ti->setDefaultTextColor(Qt::darkBlue);

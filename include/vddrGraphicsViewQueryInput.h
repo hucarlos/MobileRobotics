@@ -114,7 +114,7 @@ namespace vddr {
 	cg2h = scene_->addLine(qsp.x(),qsp.y()-15,qsp.x(),qsp.y()+15); cg2hOn = true;
 	cg2v = scene_->addLine(qsp.x()-15,qsp.y(),qsp.x()+15,qsp.y()); cg2vOn = true;
 	t2   = scene_->addText(QString("End point"),QFont("Times", 20, QFont::Bold));
-	t2->scale(1,1);
+	//t2->scale(1,1);
 	// t2->scale(1,-1);
 	t2->setPos(qsp.x(),qsp.y()+40);
 	t2On = true;
@@ -136,7 +136,7 @@ namespace vddr {
 	//t1   = scene_->addText(QString("Start point"),QFont("Times", 20, QFont::Bold));
 	t1   = scene_->addText(QString("End point"),QFont("Times", 20, QFont::Bold));
 	//t1->scale(1,-1);
-	t1->scale(1,1);
+	//t1->scale(1,1);
        	t1->setPos(qsp.x(),qsp.y()+40);
 	t1On = true;
 	ok = true;

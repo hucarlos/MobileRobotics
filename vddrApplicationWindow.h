@@ -10,6 +10,7 @@
 #include <QDragEnterEvent>
 #include <QDropEvent>
 #include <QThread>
+#include <QMessageBox>
 
 // the two base classes
 #include "ui_vddr.h"
