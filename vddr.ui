@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>JB Hayet, CIMAT</author>
+ <class>vddrMainWindow</class>
+ <widget class="QMainWindow" name="vddrMainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1114</width>
+    <height>856</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Visually constrained Differential Drive Robot</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/cgal/logos/cgal_icon</normaloff>:/cgal/logos/cgal_icon</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>-60</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="transformationAnchor">
+     <enum>QGraphicsView::AnchorViewCenter</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>620</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Animation speed</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="qSliderSpeed">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>10</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>40</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>60</y>
+       <width>451</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Animation speed</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="qSliderSpeed_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>10</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>40</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>551</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Animation speed</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="qSliderSpeed_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>10</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>40</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>60</y>
+        <width>451</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Animation speed</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="qSliderSpeed_4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>10</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="pageStep">
+        <number>10</number>
+       </property>
+       <property name="value">
+        <number>40</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>601</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Holonomic path</string>
+     </attribute>
+     <widget class="QSlider" name="qSliderClearance">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>20</y>
+        <width>341</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>90</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Penalizing low clearance</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Non-holonomic path</string>
+     </attribute>
+     <widget class="QSlider" name="qSliderBackwards">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>20</y>
+        <width>311</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Penalizing backward motion</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Footprints output format</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="trajFormatComboBox">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>50</y>
+        <width>111</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Stasse</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kajita</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCheckBox" name="qFwdCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Use forward/backward ratio in weights</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Visibility</string>
+     </attribute>
+     <widget class="QSpinBox" name="visSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>56</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Landmark id</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="visAllCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>331</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show all landmarks data</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="connectedSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>56</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="connectedLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Connected id</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="qSliderViewAngle">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>40</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>70</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="connectedLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>40</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>View angle</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>690</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string> Rotation max.</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="PhiMaxSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>690</y>
+      <width>62</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>1.570000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.010000000000000</double>
+    </property>
+    <property name="value">
+     <double>0.700000000000000</double>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="useLateralMotion">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>720</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use lateral motion</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>Visualization Tools</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionInsertPolyline"/>
+   <addaction name="actionMakeQuery"/>
+   <addaction name="actionAddLandmark"/>
+   <addaction name="separator"/>
+   <addaction name="actionShowVoronoiDiagram"/>
+   <addaction name="actionShowCompleteVoronoi"/>
+   <addaction name="actionShowDilatedObstacles"/>
+   <addaction name="actionShowCObst"/>
+   <addaction name="actionShowVisibility"/>
+   <addaction name="actionShowConnectorRegions"/>
+   <addaction name="separator"/>
+   <addaction name="actionShowUnderlyingGraph"/>
+   <addaction name="actionShowHolonomicPath"/>
+   <addaction name="actionShowShortestPathsGrid"/>
+   <addaction name="actionShowPartition"/>
+   <addaction name="actionShowAnimation"/>
+   <addaction name="actionRecomputePath"/>
+   <addaction name="actionShowTrajInfo"/>
+   <addaction name="separator"/>
+   <addaction name="actionVerbose"/>
+   <addaction name="separator"/>
+   <addaction name="actionRecenter"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1114</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionClear"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveTrajectory"/>
+    <addaction name="actionSaveTrajectorySnapshotsPng"/>
+    <addaction name="actionSaveTrajectorySnapshotsPdf"/>
+    <addaction name="actionSaveTrajectoryPrimitives"/>
+    <addaction name="actionSaveOrientationGrid"/>
+    <addaction name="actionSavePhis"/>
+    <addaction name="actionLoadObstacles"/>
+    <addaction name="actionSaveObstacles"/>
+    <addaction name="actionLoadEnvironmentFile"/>
+    <addaction name="actionSaveEnvironment"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutCGAL"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionInsertPolyline"/>
+    <addaction name="actionMakeQuery"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowVoronoiDiagram"/>
+    <addaction name="actionShowCompleteVoronoi"/>
+    <addaction name="actionShowDilatedObstacles"/>
+    <addaction name="actionShowCObst"/>
+    <addaction name="actionShowVisibility"/>
+    <addaction name="actionShowConnectorRegions"/>
+    <addaction name="actionAddLandmark"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowUnderlyingGraph"/>
+    <addaction name="actionShowHolonomicPath"/>
+    <addaction name="actionShowPartition"/>
+    <addaction name="actionShowShortestPathsGrid"/>
+    <addaction name="actionShowAnimation"/>
+    <addaction name="separator"/>
+    <addaction name="actionVerbose"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecenter"/>
+   </widget>
+   <widget class="QMenu" name="menuMechanism">
+    <property name="title">
+     <string>Mechanism</string>
+    </property>
+    <addaction name="actionDDR"/>
+    <addaction name="actionHuman"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuOptimization">
+    <property name="title">
+     <string>Optimization</string>
+    </property>
+    <addaction name="actionPerformOptimization"/>
+    <addaction name="actionJustShowShortcuts"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuMechanism"/>
+   <addaction name="menuOptimization"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAboutCGAL">
+   <property name="text">
+    <string>About &amp;CGAL</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionInsertPolyline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/inputPolyline.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/inputPolyline.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Insert Polyline</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Point or Polyline</string>
+   </property>
+   <property name="statusTip">
+    <string>Left: Insert vtx | Right: Final vtx | Del: Delete vtx</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/cgal/fileToolbar/fileNew.png</normaloff>:/cgal/fileToolbar/fileNew.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Clear</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionShowVoronoiDiagram">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/Voronoi_diagram_2.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/Voronoi_diagram_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;Voronoi diagram</string>
+   </property>
+   <property name="toolTip">
+    <string>Show the underlying Voronoi diagram</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionShowVisibility">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/eye.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/eye.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;visibility</string>
+   </property>
+   <property name="toolTip">
+    <string>Show the visibility zone</string>
+   </property>
+  </action>
+  <action name="actionRecenter">
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/zoom-best-fit.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/zoom-best-fit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Re&amp;center the viewport</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionMakeQuery">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/query.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/query.png</iconset>
+   </property>
+   <property name="text">
+    <string>Process query</string>
+   </property>
+   <property name="toolTip">
+    <string>Process a query</string>
+   </property>
+  </action>
+  <action name="actionShowDilatedObstacles">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/dilated.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/dilated.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;dilated obstacles</string>
+   </property>
+   <property name="statusTip">
+    <string>Show the obstacles dilated by the size of the robot</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionShowCObst">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/cobst.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/cobst.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;cobst domain</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionShowHolonomicPath">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../../../../../../Users/jbhayet/.designer/backup/CGAL/IO/pixmaps/holonomic.png</normaloff>
+     <normalon>:/cgal/Actions/CGAL/IO/pixmaps/holonomic.png</normalon>../../../../../../../../Users/jbhayet/.designer/backup/CGAL/IO/pixmaps/holonomic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show &amp;holonomic path</string>
+   </property>
+  </action>
+  <action name="actionShowCompleteVoronoi">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/voronoiComplete.bmp</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/voronoiComplete.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Show complete Voronoi</string>
+   </property>
+  </action>
+  <action name="actionShowUnderlyingGraph">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/graph.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/graph.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show underlying graph</string>
+   </property>
+  </action>
+  <action name="actionShowPartition">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/partition.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/partition.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show partition</string>
+   </property>
+  </action>
+  <action name="actionShowTrajInfo">
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/trajinfo.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/trajinfo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show information on the trajectory</string>
+   </property>
+  </action>
+  <action name="actionDDR">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>DDR</string>
+   </property>
+  </action>
+  <action name="actionHuman">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Human</string>
+   </property>
+  </action>
+  <action name="actionShowAnimation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/animate.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/animate.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show animation</string>
+   </property>
+  </action>
+  <action name="actionSaveTrajectory">
+   <property name="text">
+    <string>Save trajectory</string>
+   </property>
+  </action>
+  <action name="actionSaveObstacles">
+   <property name="text">
+    <string>Save obstacles</string>
+   </property>
+  </action>
+  <action name="actionLoadObstacles">
+   <property name="text">
+    <string>Load obstacles file</string>
+   </property>
+  </action>
+  <action name="actionPerformOptimization">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Perform optimization</string>
+   </property>
+  </action>
+  <action name="actionJustShowShortcuts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Just show shortcuts</string>
+   </property>
+  </action>
+  <action name="actionVerbose">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/verbose.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/verbose.png</iconset>
+   </property>
+   <property name="text">
+    <string>Verbose</string>
+   </property>
+  </action>
+  <action name="actionRecomputePath">
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/recompute.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/recompute.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recompute path</string>
+   </property>
+  </action>
+  <action name="actionSaveTrajectorySnapshotsPng">
+   <property name="text">
+    <string>Save trajectory snapshots (PNG)</string>
+   </property>
+   <property name="toolTip">
+    <string>Save trajectory snapshots (PNG)</string>
+   </property>
+  </action>
+  <action name="actionAddLandmark">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/landmark.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/landmark.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add landmark</string>
+   </property>
+  </action>
+  <action name="actionShowConnectorRegions">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/connectors.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/connectors.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show connector regions</string>
+   </property>
+  </action>
+  <action name="actionLoadEnvironmentFile">
+   <property name="text">
+    <string>Load environment file</string>
+   </property>
+  </action>
+  <action name="actionSaveEnvironment">
+   <property name="text">
+    <string>Save Environment</string>
+   </property>
+  </action>
+  <action name="actionSaveTrajectoryPrimitives">
+   <property name="text">
+    <string>Save trajectory primitives</string>
+   </property>
+  </action>
+  <action name="actionSavePhis">
+   <property name="text">
+    <string>Save phis</string>
+   </property>
+   <property name="toolTip">
+    <string>Save phis</string>
+   </property>
+  </action>
+  <action name="actionSaveTrajectorySnapshotsPdf">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Save trajectory snapshots (PDF)</string>
+   </property>
+   <property name="toolTip">
+    <string>Save trajectory snapshots (PDF)</string>
+   </property>
+  </action>
+  <action name="actionShowShortestPathsGrid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="vddr.qrc">
+     <normaloff>:/cgal/Actions/CGAL/IO/pixmaps/part.png</normaloff>:/cgal/Actions/CGAL/IO/pixmaps/part.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show shortest paths grid  </string>
+   </property>
+  </action>
+  <action name="actionSaveOrientationGrid">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save orientation grid</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="vddr.qrc"/>
+ </resources>
+ <connections/>
+</ui>

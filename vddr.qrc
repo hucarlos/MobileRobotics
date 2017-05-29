@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="/cgal/Actions">
+    <file>CGAL/IO/pixmaps/connectors.png</file>
+    <file>CGAL/IO/pixmaps/landmark.png</file>
+    <file>CGAL/IO/pixmaps/recompute.png</file>
+    <file>CGAL/IO/pixmaps/verbose.png</file>
+    <file>CGAL/IO/pixmaps/animate.png</file>
+    <file>CGAL/IO/pixmaps/trajinfo.png</file>
+    <file>CGAL/IO/pixmaps/zoom-best-fit.png</file>
+    <file>CGAL/IO/pixmaps/Voronoi_diagram_2.png</file>
+    <file>CGAL/IO/pixmaps/inputPolyline.png</file>
+    <file>CGAL/IO/pixmaps/partition.png</file>
+    <file>CGAL/IO/pixmaps/cobst.png</file>
+    <file>CGAL/IO/pixmaps/dilated.png</file>
+    <file>CGAL/IO/pixmaps/graph.png</file>
+    <file>CGAL/IO/pixmaps/query.png</file>
+    <file>CGAL/IO/pixmaps/robot.png</file>
+    <file>CGAL/IO/pixmaps/voronoiComplete.bmp</file>
+    <file>CGAL/IO/pixmaps/voronoiTriangles.bmp</file>
+    <file>CGAL/IO/pixmaps/eye.png</file>
+    <file>CGAL/IO/pixmaps/holonomic.png</file>
+  </qresource>
+</RCC>
