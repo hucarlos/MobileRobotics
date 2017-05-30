@@ -1,4 +1,4 @@
-# MobileRobotics 1.0
+# MobileRobotics 0.1
 
 In OSX cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt5)
 
